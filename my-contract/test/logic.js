@@ -14,9 +14,9 @@
 
 'use strict';
 
-const Template = require('cicero-core').Template;
-const Clause = require('cicero-core').Clause;
-const Engine = require('cicero-engine').Engine;
+const Template = require('@accordproject/cicero-core').Template;
+const Clause = require('@accordproject/cicero-core').Clause;
+const Engine = require('@accordproject/cicero-engine').Engine;
 
 const fs = require('fs');
 const path = require('path');
@@ -35,6 +35,11 @@ describe('Logic', () => {
     let clause;
     let engine;    
 
+    const state = {
+        "$class": "org.accordproject.common.ContractState",
+        "stateId": "1"
+    };
+
     beforeEach( async function() {
         template = await Template.fromDirectory(rootDir);
         clause = new Clause(template);
@@ -48,7 +53,7 @@ describe('Logic', () => {
             const request = {};
             request.$class = 'org.accordproject.helloworld.Request';
             request.input = 'World'
-            const result = await engine.execute(clause, request);
+            const result = await engine.execute(clause, request, state);
             result.should.not.be.null;
             result.response.output.should.equal('Hello Matt World');
         });
