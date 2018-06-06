@@ -5,9 +5,6 @@
     "scripts": {
         "test": "mocha"
     },
-    "engines": {
-        "cicero": "^0.3.16"
-    },
     "cicero": {
         "template": "contract",
         "version": "^0.3.16"
