@@ -1,6 +1,6 @@
 # sample-private-template-library
 
-This template library exists for you to use as a basis for your own template library.
+This template library exists for you to use as a basis for your own template library. An example repository based on this format is available at templates.accordproject.org
 
 You should fork (or download and copy) this repository to initialise your own.
 
