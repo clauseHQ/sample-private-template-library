@@ -36,7 +36,7 @@ describe('Logic', () => {
     let engine;    
 
     const state = {
-        "$class": "org.accordproject.common.ContractState",
+        "$class": "org.accordproject.cicero.contract.AccordContractState",
         "stateId": "1"
     };
 

@@ -1,0 +1,237 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        // handle drop down menus
+        window.addEventListener('load', function () {
+            var dropdown = document.querySelector('.dropdown');
+            if(dropdown) {
+                dropdown.addEventListener('click', function(event) {
+                    event.stopPropagation();
+                    dropdown.classList.toggle('is-active');
+                });
+            }
+        }, false);
+    </script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+    
+
+    <!-— generic unfurl tags -->
+    <meta property="og:type" content="website" />
+    <meta name="twitter:label1" content="Apache 2.0 Licensed" />
+    <meta name="twitter:data1" content="on GitHub.com" />
+
+    
+<!-— facebook open graph tags -->
+<meta property="og:url" content="https://templates.accordproject.org/my-contract@0.1.0.html" />
+<meta property="og:title" content="my-contract@0.1.0" />
+<meta property="og:description" content="Hello world contract" />
+<meta property="og:image" content="https://www.plantuml.com/plantuml/png/jTB1QiCm30RWkvz2nuwrVe8GMdhUfSqB65kaARRaIGebR7ltPQ4C2eFcifk4nA_leBrQ41jBTZ47LM3fVOYH9LNXAqRp5yoPRomv-HE-ZwW6JGERRZijWnTeM_Xm0F0APvE1UXYeZkQ-tAgitUwpNQvUfegICVKeFdAfh7EXaneMtqaW3T46fdLEhKoApw0ysYhfFUq_g1sMceFX6oVCY_UmxGMH_k1IAFWC-vZtAtxSZqD4uPbE9ZFL7vRfyTwwFLBw-OXl" />
+
+<!-— twitter card tags additive with the og: tags -->
+<meta name="twitter:title" content="my-contract@0.1.0" />
+<meta name="twitter:description" content="Hello world contract" />
+<meta name="twitter:image" content="https://www.plantuml.com/plantuml/png/jTB1QiCm30RWkvz2nuwrVe8GMdhUfSqB65kaARRaIGebR7ltPQ4C2eFcifk4nA_leBrQ41jBTZ47LM3fVOYH9LNXAqRp5yoPRomv-HE-ZwW6JGERRZijWnTeM_Xm0F0APvE1UXYeZkQ-tAgitUwpNQvUfegICVKeFdAfh7EXaneMtqaW3T46fdLEhKoApw0ysYhfFUq_g1sMceFX6oVCY_UmxGMH_k1IAFWC-vZtAtxSZqD4uPbE9ZFL7vRfyTwwFLBw-OXl" />
+<meta name="twitter:image:alt" content="UML diagram of my-contract@0.1.0 namespace." />
+<meta name="twitter:url" content="https://templates.accordproject.org/my-contract@0.1.0.html" />
+
+
+    <title>Accord Project Template Library</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <a href="/">
+                <img src="/accord_logo.png" />
+            </a>
+        </div>
+    </section>
+
+    
+    <section class="section">
+        <div class="container">
+            <h1 class="title">
+                Template my-contract@0.1.0
+            </h1>
+            <div class="tags">
+                <span class="tag">Contract</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">^0.4</span>
+                <span class="tag">355d4a0c9255a0def3ece2e71ef4a4c0f1a7f865af4e62b22844e477964af934</span>
+            </div>
+            <p class="subtitle">
+                Hello world contract
+            </p>
+
+            <p>
+                <div class="dropdown">
+                    <div class="dropdown-trigger">
+                        <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                            <span>Versions</span>
+                            <span class="icon is-small">
+                                <i class="fas fa-angle-down" aria-hidden="true"></i>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                        <div class="dropdown-content">
+                        
+                            <a href="my-contract@0.1.0.html" class="dropdown-item is-active">
+                                my-contract@0.1.0
+                            </a>
+                        
+                        </div>
+                    </div>
+                </div>
+                <a href="./archives/my-contract@0.1.0.cta" class="button is-rounded">Download Archive</a>
+            </p>
+
+            <img src="https://www.plantuml.com/plantuml/svg/jTB1QiCm30RWkvz2nuwrVe8GMdhUfSqB65kaARRaIGebR7ltPQ4C2eFcifk4nA_leBrQ41jBTZ47LM3fVOYH9LNXAqRp5yoPRomv-HE-ZwW6JGERRZijWnTeM_Xm0F0APvE1UXYeZkQ-tAgitUwpNQvUfegICVKeFdAfh7EXaneMtqaW3T46fdLEhKoApw0ysYhfFUq_g1sMceFX6oVCY_UmxGMH_k1IAFWC-vZtAtxSZqD4uPbE9ZFL7vRfyTwwFLBw-OXl" />
+
+            <div class="content">
+                <p>
+                <h1 id="accordprotocoltemplatehelloworld">Accord Protocol Template: Hello World</h1>
+<p>The is the Hello World of Accord Protocol Templates. Executing the clause will simply echo back the text that occurs after the string <code>Hello</code> prepended to text that is passed in the request.</p>
+                </p>
+            </div>
+
+            <h4 class="title is-4">Sample</h4>
+            <div class="content">
+                <pre style="white-space: pre-wrap; border: 0; background-color: transparent;">
+Name of the person to greet: "Matt".
+Thank you!
+                </pre>
+            </div>
+
+            <h4 class="title is-4">Model Dependencies</h4>
+            <div class="content">
+                <ul>
+                
+                <li><a href="https://models.accordproject.org/cicero/contract.html">org.accordproject.cicero.contract.AccordContract</a></li>
+                
+                </ul>
+            </div>
+
+            <div class="container">
+    <h2 class="title is-2">Technical Integration</h2>
+
+    <div class="content">
+    <p>
+    Please refer to the <a href="https://docs.accordproject.org/docs/cicero.html">Cicero documentation</a> 
+    for details and examples of how to integrate a call to a Cicero template into your application.
+    <p>
+    <p>
+    View the Latest code for this template on <a href="https://github.com/accordproject/cicero-template-library/tree/master/src/my-contract">on GitHub.</a>
+    </p>
+    </div>
+
+    <h4 class="title is-4">Sample Instance</h4>
+    <pre style="white-space: pre-wrap; border: 0; background-color: transparent;"><code style="white-space: pre-wrap;">{
+    "$class": "org.accordproject.helloworld.TemplateModel",
+    "contractId": "dc00bdd9-9d66-41a0-b1b4-071aa598a4d2",
+    "name": "Matt"
+}</pre></code>
+
+    <h4 class="title is-4">State Types</h4>
+    <table class="table">
+    <thead>
+        <tr>
+        <th>Type</th>
+        <th>Sample JSON</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+    </tbody>
+    </table>
+
+    <h4 class="title is-4">Request Types</h4>
+    <table class="table">
+    <thead>
+        <tr>
+        <th>Type</th>
+        <th>Sample JSON</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr>
+        <th>org.accordproject.helloworld.Request</th>
+        <td><pre style="white-space: pre-wrap; border: 0; background-color: transparent;"><code style="white-space: pre-wrap;">{
+    "$class": "org.accordproject.helloworld.Request",
+    "input": "Ex anim.",
+    "transactionId": "f6d4bb70-8435-11e8-9f59-9b119adf5935",
+    "timestamp": "2018-07-10T11:39:54.408Z"
+}</pre></code></td>
+        </tr>
+        
+    </tbody>
+    </table>
+
+    <h4 class="title is-4">Response Types</h4>
+    <table class="table">
+    <thead>
+        <tr>
+        <th>Type</th>
+        <th>Sample JSON</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        <tr>
+        <th>org.accordproject.helloworld.Response</th>
+        <td><pre style="white-space: pre-wrap; border: 0; background-color: transparent;"><code style="white-space: pre-wrap;">{
+    "$class": "org.accordproject.helloworld.Response",
+    "output": "Laborum tempor anim.",
+    "transactionId": "f6d530a0-8435-11e8-9f59-9b119adf5935",
+    "timestamp": "2018-07-10T11:39:54.410Z"
+}</pre></code></td>
+        </tr>
+        
+    </tbody>
+    </table>
+
+    <h4 class="title is-4">Events Types</h4>
+    <table class="table">
+    <thead>
+        <tr>
+        <th>Type</th>
+        <th>Sample JSON</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+    </tbody>
+    </table>
+</div>
+
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                <p>
+                    Licensed under the
+                    <a href="https://www.apache.org/licenses/LICENSE-2.0.html">Apache-2.0</a> Open Source software license.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

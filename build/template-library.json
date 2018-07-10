@@ -1,0 +1,11 @@
+{
+    "my-contract@0.1.0": {
+        "uri": "ap://my-contract@0.1.0#355d4a0c9255a0def3ece2e71ef4a4c0f1a7f865af4e62b22844e477964af934",
+        "url": "https://templates.accordproject.org/archives/my-contract@0.1.0.cta",
+        "name": "my-contract",
+        "description": "Hello world contract",
+        "version": "0.1.0",
+        "ciceroVersion": "^0.4",
+        "type": 0
+    }
+}
