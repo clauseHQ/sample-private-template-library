@@ -1,0 +1,15 @@
+namespace org.accordproject.helloworld
+
+import org.accordproject.cicero.contract.AccordContract from https://models.accordproject.org/cicero/contract.cto
+
+transaction Request {
+  o String input
+}
+
+transaction Response {
+  o String output
+}
+
+asset TemplateModel extends AccordContract {
+  o String name
+}
